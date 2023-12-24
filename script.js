@@ -64,4 +64,23 @@ document.addEventListener('DOMContentLoaded', () =>  {
     //Event listener para el botón de limpiar
     document.querySelector('.limpiar').addEventListener('click', limpiar);
 
+    //Función para borrar el útlimo digito
+    function borraUltimo(){
+        let currentValue = display.value;
+        display.value = currentValue.substr(0, currentValue.length - 1);
+        //Si estás borrando un operando o una operaicón, asegúrate de actualizar las variables
+        if(operacionEnCurso && operando2){
+            operando2=operando1.slice(0,-1);
+        }else if(operacionEnCurso && !operando2){
+            operacionEnCurso='';
+        }else{
+            operando1=operando1.slice(0,-1);
+        }
+    }
+    document.querySelector(".borrado").addEventListener("click", borraUltimo);
+
+
+    //Modifica la función calcula resultadoapra operaciones continuas
+    
+
 });
