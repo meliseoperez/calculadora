@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.calculadora {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+.display {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 10px;
+    font-size: 2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.botones{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 10px;
+}
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.numero {
+    background-color: #e0e0e0;
+}
+
+.operacion {
+    background-color: #fe9241;
+    color: white;
+}
+
+.total {
+    width: 100%;
+    background-color: #9acd32;
+    color: white;
+}
+.limpiar {
+    width: 100%;
+    background-color: #9acd32;
+    color: white;
+}
+/* Agrega más estilos según prefieras */
