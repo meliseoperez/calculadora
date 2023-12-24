@@ -3,11 +3,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #0a0a0a;
 }
 
 .calculadora {
-    background-color: #fff;
+    background-color: #63c8cf;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
     padding: 20px;
